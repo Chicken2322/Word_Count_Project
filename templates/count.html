@@ -1,0 +1,17 @@
+
+<a href="{% url 'home' %}">Back to HomePage</a>
+
+<h3>There are {{number}} words in your sentence</h3>
+
+<h2>Your Text:</h2>
+
+{{info}}
+
+<h2>Word Count</h2>
+
+{% for word ,counttotal in dictionaryword %}
+
+{{word}}  --  {{counttotal}}
+<br/>
+
+{% endfor %}
